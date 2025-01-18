@@ -1,10 +1,12 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
 void main() {
   runApp(JogoDaVelhaApp());
 }
 
 class JogoDaVelhaApp extends StatelessWidget {
+  const JogoDaVelhaApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,6 +19,8 @@ class JogoDaVelhaApp extends StatelessWidget {
 }
 
 class JogoDaVelhaPage extends StatefulWidget {
+  const JogoDaVelhaPage({super.key});
+
   @override
   _JogoDaVelhaPageState createState() => _JogoDaVelhaPageState();
 }
@@ -166,7 +170,7 @@ class _JogoDaVelhaPageState extends State<JogoDaVelhaPage> {
                 ],
               ),
               const SizedBox(height: 20),
-              Container(
+              SizedBox(
                 width: boardSize,
                 height: boardSize,
                 child: GridView.builder(
